@@ -1,0 +1,252 @@
+body{
+  margin: 0;
+}
+
+/* header */
+/* .brand {
+  background: center top / cover no-repeat;
+  height: 40vh;
+  text-align: center;
+  position: relative;
+} */
+/* h1{
+  font-family: Monoton, cursive;
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  color: #1affa3;
+  margin-top: 0;
+}
+.main_page{
+  color: white;
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+} */
+
+.brand {
+    background: center top / cover no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+.page-title {
+    color: #1affa3;
+    font-family: Monoton, cursive;
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.page-subtitle {
+    color: #fff;
+    margin-top: auto;
+}
+
+h4{
+  color: #1affa3;
+  text-align: center;
+  font-family: ZCOOL QingKe HuangYou, cursive;
+  font-size: 36px;
+  text-decoration: underline;
+  font: bold;
+}
+/* navigation */
+nav{
+  font-family: Special Elite, cursive;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+.nav-item{
+    padding: 0 5px;
+     word-spacing: 5px;
+}
+/* paragraphs */
+p{
+  font-family: Reem Kufi, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+/* images on madlib */
+.image1{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+/* youtube */
+iframe{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+/* social media buttons */
+.fa, .fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.social{
+  text-align: center;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.social .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.streaming{
+  text-align: center;
+}
+/* gallery */
+.grid{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  height: auto;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.grid-item img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+
+.masonry {
+  column-count: 1;
+  column-gap: 0;
+  counter-reset: item-counter;
+  width: 960px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 400px) {
+  .masonry {
+		column-count: 2;
+  }
+}
+@media screen and (min-width: 600px) {
+  .masonry {
+		column-count: 3;
+  }
+}
+@media screen and (min-width: 980px) {
+  .masonry {
+		column-count: 4;
+		/* width: 100%; */
+  }
+}
+@media screen and (min-width: 1100px) {
+  .masonry {
+		column-count: 5;
+  }
+}
+
+.item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  padding: 10px;
+}
+
+.item img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+
+
+/* this is for magic-8-ball */
+#outputDiv {
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: #fff;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 0 4px #000, 0 0 4px #000;
+}
+
+.ee {
+	display: block;
+	position: relative;
+	animation: ee 1s infinite;
+}
+
+@keyframes ee {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  75%  {color: cyan;}
+  100% {color: green;}
+
+	0%   {text-transform:uppercase;}
+  33%  {text-transform:capitalize;}
+  66%  {text-transform:lowercase;}
+  100% {text-transform:none;}
+
+	0% {
+		bottom: -5px;
+	}
+
+	50% {
+		bottom: 5px;
+	}
+
+	100% {
+		bottom: -5px;
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
